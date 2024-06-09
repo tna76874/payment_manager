@@ -2,7 +2,7 @@
 
 ## Docker
 
-Die serverseitige Installation setzt Docker (oder podman) vorraus. Empfohlen wird `docker-compose`:
+Die serverseitige Installation setzt Docker (oder podman) voraus. Empfohlen wird `docker-compose`:
 
 ``` 
 --8<-- "docker-compose.yml"

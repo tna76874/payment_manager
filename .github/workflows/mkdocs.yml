@@ -1,9 +1,12 @@
-name: ci 
+name: mkdocs 
 on:
   push:
     branches:
       - master 
       - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
 permissions:
   contents: write
 jobs:
@@ -20,7 +23,7 @@ jobs:
           python-version: 3.x
       - run: |
           echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-          echo "build_date=$(date -u '+%d.%m.%Y')" >> $GITHUB_ENV
+          echo "build_doc_date=$(date -u '+%d.%m.%Y')" >> $GITHUB_ENV
           echo "COMMIT_HASH=$(<server/COMMIT_HASH)" >> $GITHUB_ENV
           echo "COMMIT_DATE=$(<server/COMMIT_DATE)" >> $GITHUB_ENV
 

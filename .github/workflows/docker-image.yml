@@ -6,10 +6,16 @@ on:
       - master
       - main
       - stable
+    paths:
+      - 'Dockerfile'
+      - 'server/COMMIT_HASH'
   pull_request:
     branches:
       - master
       - main
+    paths:
+      - 'Dockerfile'
+      - 'server/COMMIT_HASH'
 
 jobs:
 

@@ -12,12 +12,12 @@ Eine Auflistung der Klassen wird in der Datenbank gespeichert. Diese Information
 
 ### 1.3 Gehashte gespeicherte Daten
 - **Kombination aus Anmeldename, Klasse und Name:** Diese Daten werden gehasht gespeichert, um die Privatsphäre zu schützen und sicherzustellen, dass personenbezogene Daten nicht im Klartext vorliegen.
-- **IP-Adressen von Suchanfragen der letzten 7 Tage:** Auch diese Daten werden gehasht gespeichert, um die Anonymität zu gewährleisten und gleichzeitig die Nutzung der Dienste überwachen und analysieren zu können.
+- **IP-Adressen von Suchanfragen der letzten 7 Tage:** Auch diese Daten werden gehasht gespeichert, um die Anonymität zu gewährleisten und gleichzeitig die Nutzung der Dienste überwachen und analysieren zu können. Es wird die gehashte IP-Adresse der Anfrage gespeichert und der Rückgabestatus (1/0) der Suchanfrage.
 
 ## 2. Zugriffskontrollen
 
 ### 2.1 Ausbremsen von Brute-Force Anfragen
-Mechanismen werden eingesetzt, um Brute-Force-Angriffe zu verhindern. Dies umfasst unter anderem die Begrenzung der Anzahl von Anmeldeversuchen innerhalb eines bestimmten Zeitraums.
+Mechanismen werden eingesetzt, um Brute-Force-Angriffe zu verhindern. Dies umfasst unter anderem die Begrenzung der Anzahl von Anfrageversuchen innerhalb von sieben Tagen.
 
 ### 2.2 Begrenzung der gültigen Suchanfragen pro Tag
 Um Missbrauch zu verhindern und die Dienstqualität sicherzustellen, wird die Anzahl der Suchanfragen pro Tag pro Nutzer begrenzt. Diese Maßnahme hilft, die Systemleistung aufrechtzuerhalten und einen fairen Zugang zu den Diensten zu gewährleisten.

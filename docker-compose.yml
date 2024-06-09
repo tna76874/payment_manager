@@ -1,0 +1,11 @@
+services:
+  saldo:
+    image: ghcr.io/tna76874/payment_manager:latest
+    build: .
+    ports:
+      - 5000:5000
+    volumes:
+      - ./data:/home/worker/data
+    environment:
+      - SALDOMANAGER_API_KEY=test
+      - SALDOMANAGER_LICENSE=nolicense

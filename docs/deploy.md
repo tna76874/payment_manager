@@ -30,7 +30,7 @@ Folgende Dateien müssen für den Start des Servers vorhanden sein:
 
 ### Lizenz
 
-Zum Starten benötigt der Server eine gültige Lizenz aus der Datei `data/license.dat`. Dabei wird eine Anfrage an [https://worldtimeapi.org/api/ip](https://worldtimeapi.org/api/ip) gestellt um die aktuelle
+Zum Starten benötigt der Server eine gültige Lizenz aus der Datei `data/license.dat`. Dabei wird eine Anfrage an [https://worldtimeapi.org/api/ip](https://worldtimeapi.org/api/ip) gestellt um das aktuelle Datum abzufragen.
 
 ### Konfiguration von Events und Zahlungsinformationen
 
@@ -53,6 +53,7 @@ LINKS:
 
 EVENTS:
   - name: 'Event1'
+    betrag: 12
 
   - name: 'Event2'
     link: peter
@@ -67,7 +68,7 @@ EVENTS:
     whitelist:
       - 05a
 ```
-In diesem Beispiel, bekommen bei Event die Klassen 05a und 05b die Zahlungsinformationen von `default` angezeigt, die Klasse 07c die von `peter`. Event2 bekommt für jede Klasse die Zahlungsinformationen von `peter` angezeigt. Event3 wird nur angezeigt, wenn der URL Parameter `code=mycode` mit im Link enthalten ist. Event4 ist so definiert wie Event3, nur dass Ergebnisse nur für die Klasse 05a angezeigt wird. 
+In diesem Beispiel, bekommen bei Event1 die Klassen 05a und 05b die Zahlungsinformationen von `default` angezeigt, die Klasse 07c die von `peter`. In jedem Fall ist der Überweisungsbetrag auf 12€ fixiert. Event2 bekommt für jede Klasse die Zahlungsinformationen von `peter` angezeigt. Event3 wird nur angezeigt, wenn der URL Parameter `code=mycode` mit im Link enthalten ist. Event4 ist so definiert wie Event3, nur dass Ergebnisse nur für die Klasse 05a angezeigt wird. 
 
 
 ## Hinzufügen von Usern

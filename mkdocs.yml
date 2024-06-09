@@ -8,6 +8,7 @@ markdown_extensions:
 plugins:
   - macros
   - search
+  - glightbox
 
 extra:
   github_user: tna76874
@@ -17,7 +18,7 @@ extra:
   build_hash: !ENV COMMIT_HASH
 
 nav:
-  - Home: index.md
+  - Bedienung: index.md
   - Installation: deploy.md
   - Datenschutz: datenschutz.md
   - Externe Abhängigkeiten: reqs.md

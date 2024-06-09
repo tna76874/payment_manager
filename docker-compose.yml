@@ -8,4 +8,3 @@ services:
       - ./data:/home/worker/data
     environment:
       - SALDOMANAGER_API_KEY=test
-      - SALDOMANAGER_LICENSE=nolicense

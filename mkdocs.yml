@@ -1,0 +1,23 @@
+site_name: Payment Manager
+site_url: https://tna76874.github.io/payment_manager
+theme:
+  name: material
+  language: de
+markdown_extensions:
+  - pymdownx.snippets
+plugins:
+  - macros
+  - search
+
+extra:
+  github_user: tna76874
+  github_repo: payment_manager
+  build_doc_date: !ENV build_doc_date
+  build_date: !ENV COMMIT_DATE
+  build_hash: !ENV COMMIT_HASH
+
+nav:
+  - Home: index.md
+  - Installation: deploy.md
+  - Datenschutz: datenschutz.md
+  - Externe Abhängigkeiten: reqs.md

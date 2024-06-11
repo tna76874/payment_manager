@@ -14,11 +14,13 @@ extra:
   github_user: tna76874
   github_repo: payment_manager
   build_doc_date: !ENV build_doc_date
+  change_date_ds: !ENV change_date_ds
   build_date: !ENV COMMIT_DATE
   build_hash: !ENV COMMIT_HASH
 
 nav:
   - Bedienung: index.md
   - Installation: deploy.md
+  - API-Dokumentation: api.md
   - Datenschutz: datenschutz.md
   - Externe Abhängigkeiten: reqs.md

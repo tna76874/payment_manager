@@ -71,8 +71,6 @@ EVENTS:
 In diesem Beispiel, bekommen bei Event1 die Klassen 05a und 05b die Zahlungsinformationen von `default` angezeigt, die Klasse 07c die von `peter`. In jedem Fall ist der Überweisungsbetrag auf 12€ fixiert. Event2 bekommt für jede Klasse die Zahlungsinformationen von `peter` angezeigt. Event3 wird nur angezeigt, wenn der URL Parameter `code=mycode` mit im Link enthalten ist. Event4 ist so definiert wie Event3, nur dass Ergebnisse nur für die Klasse 05a angezeigt werden. 
 
 
-## Hinzufügen von Usern
+## Hinzufügen von Usern und Klassen
 
-... coming soon ...
-
-Mit einem API-Endpoint und dem Api-Key aus dem Dockerfile werden gehashte Einträge von Usern der Datenbank hinzugefügt. Es werden keine lesbaren personenbezogene Dateien gespeichert.
+Siehe [API-Dokumentation](api.md).

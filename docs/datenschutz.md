@@ -26,10 +26,14 @@ Um Missbrauch zu verhindern und die Dienstqualität sicherzustellen, wird die An
 
 Die Informationen aus dem Formularfeld werden auf dem Server mit den entsprechenden Hash-Informationen in der Datenbank abgeglichen. Es erfolgt keine dauerhafte Speicherung auf dem Server, sondern lediglich eine Verarbeitung der Daten.
 
-## 4. Ihre Rechte
+## 4. Sicherstellung von TLS-Verschlüsselung bei der Übertragung personenbezogener Daten
+
+Um die Sicherheit und Vertraulichkeit personenbezogener Daten zu gewährleisten, wird sichergestellt, dass bei der Übertragung von personenbezogenen Daten, die über eine API der Datenbank hinzugefügt werden, eine TLS-Verschlüsselung erzwungen wird. Dies bedeutet, dass alle Daten, die zwischen dem Client und dem Server übertragen werden, verschlüsselt sind, um die Integrität und Vertraulichkeit der Informationen zu schützen. Durch die Implementierung von TLS wird sichergestellt, dass die Kommunikation sicher erfolgt und potenzielle Angriffe auf die Datenübertragung verhindert werden.
+
+## 5. Ihre Rechte
 Nutzer haben das Recht, jederzeit Auskunft über die gespeicherten personenbezogenen Daten zu erhalten sowie das Recht auf Berichtigung, Löschung und Einschränkung der Verarbeitung dieser Daten. Bei Fragen oder Anliegen bezüglich des Datenschutzes können sich Nutzer jederzeit an den Betreiber wenden.
 
-## 5. Kontakt
+## 6. Kontakt
 Bei Fragen zur Erhebung, Verarbeitung oder Nutzung personenbezogener Daten, zur Auskunftserteilung, Berichtigung, Sperrung oder Löschung von Daten sowie zum Widerruf erteilter Einwilligungen wenden sich Nutzer bitte direkt an den jeweiligen Betreiber des Dienstes.
 
 Für allgemeine Fragen und Informationen können Nutzer die Dateien im GitHub Repository einsehen:
@@ -38,7 +42,7 @@ Für allgemeine Fragen und Informationen können Nutzer die Dateien im GitHub Re
 
 Diese Datenschutzerklärung wird regelmäßig überprüft und bei Bedarf aktualisiert. Änderungen werden auf der Website des Betreibers veröffentlicht, um Nutzer stets über den Datenschutz zu informieren.
 
-**Letzte Aktualisierung:**  {{ extra.build_doc_date }}
+**Letzte Aktualisierung:**  {{ extra.change_date_ds }}
 
 **Build ID:**  {{ extra.build_hash }}
 

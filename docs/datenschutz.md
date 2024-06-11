@@ -5,7 +5,7 @@ Der Schutz personenbezogener Daten ist ein wichtiges Anliegen im Design dieses D
 ## 1. Arten der gespeicherten Daten
 
 ### 1.1 Lesbar gespeicherte Informationen aus config.yml
-Bestimmte Konfigurationsinformationen werden in einer Datei `config.yml` und einer Datenbank `datab.db` gespeichert. Diese Informationen sind für den reibungslosen Betrieb des Systems erforderlich und enthalten keine personenbezogenen Daten.
+Bestimmte Konfigurationsinformationen werden in einer Datei `config.yml` und einer Datenbank `datab.db` gespeichert. Diese Informationen sind für den reibungslosen Betrieb des Systems erforderlich. Die Datenbank enthält keine personenbezogenen Daten.
 
 ### 1.2 Lesbar gespeicherte Daten in der Datenbank
 Eine Auflistung der Klassen wird in der Datenbank gespeichert. Diese Informationen sind wichtig für die Verwaltung und Bereitstellung der Dienste.
@@ -28,7 +28,9 @@ Die Informationen aus dem Formularfeld werden auf dem Server mit den entsprechen
 
 ## 4. Sicherstellung von TLS-Verschlüsselung bei der Übertragung personenbezogener Daten
 
-Um die Sicherheit und Vertraulichkeit personenbezogener Daten zu gewährleisten, wird sichergestellt, dass bei der Übertragung von personenbezogenen Daten, die über eine API der Datenbank hinzugefügt werden, eine TLS-Verschlüsselung erzwungen wird. Dies bedeutet, dass alle Daten, die zwischen dem Client und dem Server übertragen werden, verschlüsselt sind, um die Integrität und Vertraulichkeit der Informationen zu schützen. Durch die Implementierung von TLS wird sichergestellt, dass die Kommunikation sicher erfolgt und potenzielle Angriffe auf die Datenübertragung verhindert werden.
+Um die Sicherheit und Vertraulichkeit personenbezogener Daten zu gewährleisten, wird sichergestellt, dass bei sämtlichen Websiteaufrufen des Dienstes eine TLS-Verschlüsselung erzwungen wird. Dies bedeutet, dass alle Daten, die zwischen dem Client und dem Server übertragen werden, verschlüsselt sind, um die Integrität und Vertraulichkeit der Informationen zu schützen. Durch die Implementierung von TLS wird sichergestellt, dass die Kommunikation sicher erfolgt und potenzielle Angriffe auf die Datenübertragung verhindert werden.
+
+Es ist wichtig zu beachten, dass jeder Betreiber selbst für ein gültiges SSL-Zertifikat, beispielsweise von Let's Encrypt, sorgen muss. Ohne ein solches Zertifikat ist der Dienst nicht nutzbar.
 
 ## 5. Ihre Rechte
 Nutzer haben das Recht, jederzeit Auskunft über die gespeicherten personenbezogenen Daten zu erhalten sowie das Recht auf Berichtigung, Löschung und Einschränkung der Verarbeitung dieser Daten. Bei Fragen oder Anliegen bezüglich des Datenschutzes können sich Nutzer jederzeit an den Betreiber wenden.

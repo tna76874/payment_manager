@@ -70,6 +70,30 @@ EVENTS:
 ```
 In diesem Beispiel, bekommen bei Event1 die Klassen 05a und 05b die Zahlungsinformationen von `default` angezeigt, die Klasse 07c die von `peter`. In jedem Fall ist der Überweisungsbetrag auf 12€ fixiert. Event2 bekommt für jede Klasse die Zahlungsinformationen von `peter` angezeigt. Event3 wird nur angezeigt, wenn der URL Parameter `code=mycode` mit im Link enthalten ist. Event4 ist so definiert wie Event3, nur dass Ergebnisse nur für die Klasse 05a angezeigt werden. 
 
+### Start und Update
+
+Der Container wird gestartet mit:
+
+```
+docker-compose up -d
+```
+
+Um den Dienst zu updaten muss das aktuelle `latest` Image gepulled werden. Danach wird der Container neugestartet.
+
+```
+docker-compose pull && docker-compose down && docker-compose up -d
+```
+
+Um die Logs des laufenden Containers anzuzeigen:
+
+```
+docker-compose logs -f
+```
+
+### Erforderlichkeit eines gültigen SSL/TLS-Zertifikats
+
+Für die sichere Nutzung unseres Dienstes ist die Beschaffung eines gültigen SSL/TLS-Zertifikats unerlässlich. Ohne eine HTTPS-Verbindung ist die Nutzung des Dienstes nicht möglich. Wir empfehlen dringend, sicherzustellen, dass das Zertifikat aktuell ist und den geltenden Sicherheitsstandards entspricht.
+
 
 ## Hinzufügen von Usern und Klassen
 

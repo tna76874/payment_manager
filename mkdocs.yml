@@ -17,6 +17,13 @@ extra:
   change_date_ds: !ENV change_date_ds
   build_date: !ENV COMMIT_DATE
   build_hash: !ENV COMMIT_HASH
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tna76874/payment_manager
+      name: "tna76874"
+
+copyright: !ENV build_doc_date
 
 nav:
   - Bedienung: index.md

@@ -11,8 +11,7 @@ Dokumentationen für die API-Endpoints `AddUsers` und `DeleteUsers`.
 - **Anfrage JSON-Format:**
 
 ```
-{
-    "sid": [
+[
         {
             "klasse": "<Klassenname>",
             "sid": "<Schüler-ID>",
@@ -20,8 +19,7 @@ Dokumentationen für die API-Endpoints `AddUsers` und `DeleteUsers`.
             "vorname": "<Vorname>"
         },
         ...
-    ]
-}
+]
 ```
 
 - **Antworten:**

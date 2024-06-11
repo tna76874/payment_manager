@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - 'docs/**'
+      - 'examples/**'
+      - 'docker-compose.yml'
       - 'mkdocs.yml'
 permissions:
   contents: write

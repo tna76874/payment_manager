@@ -68,7 +68,9 @@ EVENTS:
     whitelist:
       - 05a
 ```
-In diesem Beispiel, bekommen bei Event1 die Klassen 05a und 05b die Zahlungsinformationen von `default` angezeigt, die Klasse 07c die von `peter`. In jedem Fall ist der Überweisungsbetrag auf 12€ fixiert. Event2 bekommt für jede Klasse die Zahlungsinformationen von `peter` angezeigt. Event3 wird nur angezeigt, wenn der URL Parameter `code=mycode` mit im Link enthalten ist. Event4 ist so definiert wie Event3, nur dass Ergebnisse nur für die Klasse 05a angezeigt werden. 
+In diesem Beispiel, bekommen bei Event1 die Klassen 05a und 05b die Zahlungsinformationen von `default` angezeigt, die Klasse 07c die von `peter`. In jedem Fall ist der Überweisungsbetrag auf 12€ fixiert. Event2 bekommt für jede Klasse die Zahlungsinformationen von `peter` angezeigt. Event3 wird nur angezeigt, wenn der URL Parameter `code=mycode` mit im Link enthalten ist. Event4 ist so definiert wie Event3, nur dass Ergebnisse nur für die Klasse 05a angezeigt werden.
+
+Wenn die Datei `data/config.yml` geändert wird, dann muss der Server nicht neugestartet werden - die Konfiguration wird dynamisch eingelesen. 
 
 ### Erforderlichkeit eines gültigen SSL/TLS-Zertifikats
 

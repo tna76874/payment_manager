@@ -98,9 +98,9 @@ additionalMiddlewares:
         X-Forwarded-For: "{client_ip}"
 ```
 
-### Cloudflare Turnstile DDOS Protection
+### Cloudflare Turnstile
 
-Optional kann ein Schutz mit Turnstile eingerichtet werden. Dazu wird ein Konto bei cloudflare benötigt und Turnstile muss dort für die entsprechende Domain konfiguriert sein. Danach in `docker-compose.yml` Folgendes hinzufügen:
+Optional kann ein Schutz mit Turnstile eingerichtet werden um automatisierten Anfragen auf das Formular vorzubeugen (empfohlen). Dazu wird ein Konto bei cloudflare benötigt und Turnstile muss dort für die entsprechende Domain konfiguriert sein. Danach in `docker-compose.yml` die folgenden Environment-Variablen hinzufügen:
 
 ```
 SALDOMANAGER_TURNSTILE_SECRET=XXXXX

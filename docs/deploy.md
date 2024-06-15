@@ -96,6 +96,15 @@ additionalMiddlewares:
         X-Forwarded-For: "{client_ip}"
 ```
 
+### Cloudflare Turnstile DDOS Protection
+
+Optional kann ein Schutz mit Turnstile eingerichtet werden. Dazu wird ein Konto bei cloudflare benötigt und Turnstile muss dort für die entsprechende Domain konfiguriert sein. Danach in `docker-compose.yml` Folgendes hinzufügen:
+
+```
+SALDOMANAGER_TURNSTILE_SECRET=XXXXX
+SALDOMANAGER_TURNSTILE_PUBLIC_KEY=YYYYY
+```
+
 ### Start und Update
 
 Der Container wird gestartet mit:

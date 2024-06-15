@@ -36,6 +36,9 @@ Zum Starten benötigt der Server eine gültige Lizenz aus der Datei `data/licens
 
 Um die Events zu konfigurieren, muss die Datei `data/config.yml` angelegt werden.
 ```
+INFO:
+    impressum: https://meinewebsite.de
+
 SEPA:
   default:
     Kontoinhaber: "Max Mustermann"

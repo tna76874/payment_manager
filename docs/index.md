@@ -4,6 +4,8 @@
 
 Auf der Startseite wird das Formular angezeigt. Dabei werden die Personendaten und der Verwendungszweck abgefragt. Falls in dem Verwendungszweck (Event) der Betrag hinterlegt ist, dann wird die Eingabe bei dem Betrag-Feld gesperrt.
 
+Es werden nur Überweisungsdetails für **gültige Nutzerdatensätze** für **zugewiesene Verwendungszwecke** angezeigt.
+
 <p style="display: flex; justify-content: center; align-items: center; border: 1px solid black; padding: 20px;">
   <img src="files/formular.svg" alt="Formular" style="width: 80vw; max-width: 500px;"/>
 </p>

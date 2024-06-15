@@ -32,7 +32,7 @@ Der Verwendungszweck ist so codiert, dass die Überweisungsinformationen aus der
 
 ### Direktes Teilen von Events
 
-Wird das Formular aufgerufen und der Share-Button geklickt, dann wird ein Link mit dem Inhalt des Formulars erstellt. Beispielsweise kann damit eine Klasse und ein Verwendungszweck (Event) vorausgefüllt werden. Für einen infividuell gestalteten Link ist es empfehlenswert einen Link-Shortener Dienst zu verwenden und diesen Link dann zu Teilen (beispielsweise auf einem Elternbrief).
+Wird das Formular aufgerufen und der Share-Button geklickt, dann wird ein Link mit dem Inhalt des Formulars erstellt. Beispielsweise kann damit eine Klasse und ein Verwendungszweck (Event) vorausgefüllt werden. Für einen individuell gestalteten Link ist es empfehlenswert einen Link-Shortener Dienst zu verwenden und diesen Link dann zu Teilen (beispielsweise auf einem Elternbrief).
 
 In der Regel ist es jedoch vorzuziehen, ein [Code-Wort](#code-wort) für jede Veranstaltung zu wählen und diesen Link zu kommunizieren.
 

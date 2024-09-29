@@ -5,7 +5,7 @@ if ! git diff-index --quiet HEAD --; then
 fi
 
 base_items=(
-            "requirements.txt"
+            "server/requirements.txt"
             "Dockerfile_base"
             )
 change_found=false

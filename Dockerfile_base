@@ -1,6 +1,6 @@
 FROM python:3.9
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get -y install git python3-pip python3-distutils python3-dev tzdata locales locales-all fonts-wqy-microhei fonts-wqy-zenhei fontconfig libxt6 libxrender1 \
     libjpeg-dev libpng-dev libtiff-dev libwebp-dev libopenjp2-7-dev libfreetype6-dev liblcms2-dev libmagickwand-dev libx11-dev fonts-courier-prime \

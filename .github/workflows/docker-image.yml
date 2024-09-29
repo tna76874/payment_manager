@@ -8,6 +8,9 @@ on:
       - stable
     paths:
       - 'Dockerfile'
+      - 'Dockerfile_base'
+      - 'build.sh'
+      - 'build_stack.sh'
       - 'server/COMMIT_HASH'
   pull_request:
     branches:
@@ -15,6 +18,9 @@ on:
       - main
     paths:
       - 'Dockerfile'
+      - 'Dockerfile_base'
+      - 'build.sh'
+      - 'build_stack.sh'
       - 'server/COMMIT_HASH'
 
 jobs:

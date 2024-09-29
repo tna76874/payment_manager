@@ -18,8 +18,10 @@ do
     fi
 done
 
+# Build base image
 if [ "$change_found" = true ]; then
     ./build.sh Dockerfile_base base
 fi
 
+# Build image
 ./build.sh Dockerfile

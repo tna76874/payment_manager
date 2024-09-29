@@ -11,5 +11,5 @@ Die jeweiligen Lizenzen und Quellcodes können unter [https://pypi.org](https://
 Weitere Abhängigkeiten sind in dem Docker-Build enthalten:
 
 ```
---8<-- "Dockerfile"
+--8<-- "Dockerfile_base"
 ```

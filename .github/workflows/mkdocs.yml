@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'server/requirements.txt'
+      - 'Dockerfile_base'
       - 'docs/**'
       - 'examples/**'
       - 'docker-compose.yml'

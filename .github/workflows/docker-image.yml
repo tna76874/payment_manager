@@ -34,22 +34,4 @@ jobs:
         password: ${{secrets.GITHUB_TOKEN}}
 
     - name: Build the Docker image
-      run: |
-          COMMIT_HASH=$(<server/COMMIT_HASH)
-          IMAGE_NAME="ghcr.io/${{ github.repository }}"
-
-          # Build image for master branch
-          if [ ${{ github.ref }} == 'refs/heads/master' ] || [ ${{ github.ref }} == 'refs/heads/main' ]; then
-            CHANNEL="latest"
-          fi
-
-          # Build image for stable branch
-          if [ ${{ github.ref }} == 'refs/heads/stable' ]; then
-            CHANNEL="stable"
-          fi
-
-          docker build . --file Dockerfile --tag ${IMAGE_NAME}:${COMMIT_HASH}
-          docker push ${IMAGE_NAME}:${COMMIT_HASH}
-
-          docker build . --file Dockerfile --tag ${IMAGE_NAME}:${CHANNEL}
-          docker push ${IMAGE_NAME}:${CHANNEL}
+      run: ./build_stack.sh

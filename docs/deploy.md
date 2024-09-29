@@ -30,7 +30,7 @@ Folgende Dateien müssen für den Start des Servers vorhanden sein:
 
 ### Lizenz
 
-Zum Starten benötigt der Server eine gültige Lizenz aus der Datei `data/license.dat`. Dabei wird eine Anfrage an [https://worldtimeapi.org/api/ip](https://worldtimeapi.org/api/ip) gestellt um das aktuelle Datum abzufragen.
+Zum Starten benötigt der Server eine gültige Lizenz aus der Datei `data/license.dat`. Dabei wird eine Anfrage an [https://worldtimeapi.org](https://worldtimeapi.org) oder [https://timeapi.io](https://timeapi.io) gestellt um das aktuelle Datum abzufragen.
 
 ### Konfiguration von Events und Zahlungsinformationen <a id="event-config"></a>
 

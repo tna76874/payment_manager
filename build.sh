@@ -10,7 +10,7 @@ IMAGEAPPEND=${2:-}
 : "${GITHUB_REF:=refs/heads/$(git symbolic-ref --short HEAD)}"
 : "${GITHUB_REPOSITORY:=$(git config --get remote.origin.url | sed 's/.*github.com.//;s/.git$//')}"
 
-COMMIT_HASH=$(git rev-parse HEAD)
+COMMIT_HASH=$(<server/COMMIT_HASH)
 CURRENT_DATE=$(date +'%Y%m%d')
 CURRENT_DATE_WITH_HOUR=$(date +'%Y%m%d%H')
 IMAGE_NAME="ghcr.io/${GITHUB_REPOSITORY}${IMAGEAPPEND}"
